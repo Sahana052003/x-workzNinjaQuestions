@@ -2,15 +2,15 @@ package com.xworkz.Programs.runner;
 
 
 public class ReverseString {
-////    public static void main(String[] args) {
-////        String name="HELLO";
-////        String reverse="";
-////
-////        for (int i=name.length()-1;i>=0;i--){
-////            reverse=reverse+name.charAt(i);
-////        }
-////        System.out.println("REversed String is : " + reverse);
-////    }
+    public static void main(String[] args) {
+        String name="HELLO";
+        String reverse="";
+
+        for (int i=name.length()-1;i>=0;i--){
+            reverse=reverse+name.charAt(i);
+        }
+        System.out.println("REversed String is : " + reverse);
+    }
 //
 //
 //
@@ -70,19 +70,19 @@ public class ReverseString {
 //
 //
     //Through Constructor
-    public ReverseString(String name){
-        String reverse="";
-        char[] array=name.toCharArray();
-
-        for (int i=name.length()-1;i>=0;i--)
-            reverse=reverse+array[i];
-            System.out.println("Reversed string name is : " + reverse);
-    }
-
-    public static void main(String[] args) {
-        ReverseString reverseString=new ReverseString("Bottle");
-
-    }
+//    public ReverseString(String name){
+//        String reverse="";
+//        char[] array=name.toCharArray();
+//
+//        for (int i=name.length()-1;i>=0;i--)
+//            reverse=reverse+array[i];
+//            System.out.println("Reversed string name is : " + reverse);
+//    }
+//
+//    public static void main(String[] args) {
+//        ReverseString reverseString=new ReverseString("Bottle");
+//
+//    }
 }
 
 
