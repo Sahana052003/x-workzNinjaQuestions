@@ -97,16 +97,14 @@ public class ReverseEachWord {
 
 
     public static void main(String[] args) {
-        String input = "Java is good programming language";
-
-        String[] words = input.split(" ");
-        String result = "";
+        String name = "Java is good programming language";
+        String[] words = name.split(" ");
+        String result = " ";
 
         int i = 0;
-
         while (i < words.length) {
             String word = words[i];
-            String reversed = "";
+            String reversed = " ";
 
             int j = word.length() - 1;
 
@@ -118,7 +116,6 @@ public class ReverseEachWord {
             result = result + reversed + " ";
             i++;
         }
-
-        System.out.println(result.trim());
+        System.out.println("Reversed Word is " + result.trim());
     }
 }
