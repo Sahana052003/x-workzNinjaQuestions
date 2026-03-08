@@ -68,6 +68,6 @@ public class UniqueCharacters {
     }
 
     public static void main(String[] args) {
-UniqueCharacters uniqueCharacters=new UniqueCharacters("Programming");
+UniqueCharacters uniqueCharacters=new UniqueCharacters("Java Automation");
     }
 }
