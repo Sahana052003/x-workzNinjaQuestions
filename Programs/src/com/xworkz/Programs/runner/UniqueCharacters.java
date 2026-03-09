@@ -1,5 +1,10 @@
 package com.xworkz.Programs.runner;
 
+
+//Java programs to print unique characters String
+
+
+
 public class UniqueCharacters {
 //        public static void main(String[] args) {
 //
@@ -46,28 +51,53 @@ public class UniqueCharacters {
 //}
 
 
-    public UniqueCharacters(String name) {
-        name = name.toLowerCase();
+//    public UniqueCharacters(String name) {
+//        name = name.toLowerCase();
+//
+//        System.out.println("Unique characters are:");
+//
+//        for (int i = 0; i < name.length(); i++) {
+//            char current = name.charAt(i);
+//            int count = 0;
+//            for (int j = 0; j < name.length(); j++) {
+//                if (current == name.charAt(j)) {
+//                    count++;
+//                }
+//            }
+//            if (count == 1) {
+//                System.out.print(current + " ");
+//            }
+//
+//
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//UniqueCharacters uniqueCharacters=new UniqueCharacters("Java Automation");
+//    }
+//}
 
-        System.out.println("Unique characters are:");
-
-        for (int i = 0; i < name.length(); i++) {
-            char current = name.charAt(i);
-            int count = 0;
-            for (int j = 0; j < name.length(); j++) {
-                if (current == name.charAt(j)) {
-                    count++;
-                }
-            }
-            if (count == 1) {
-                System.out.print(current + " ");
-            }
 
 
-        }
-    }
+
+
 
     public static void main(String[] args) {
-UniqueCharacters uniqueCharacters=new UniqueCharacters("Java Automation");
+
+        String name = "Java Automation";
+
+        boolean[] visited = new boolean[128];
+
+        System.out.println("Characters without repetition:");
+
+        for (int i = 0; i < name.length(); i++) {
+
+            char ch = name.charAt(i);
+
+            if (ch != ' ' && !visited[ch]) {
+                System.out.print(ch + " ");
+                visited[ch] = true;
+            }
+        }
     }
 }
