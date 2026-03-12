@@ -1,5 +1,10 @@
 package com.xworkz.array.runner;
 
+
+
+//Find common elements between two arrays
+
+
 public class CommonElements {
 //   public static void main(String[] args){
 //      int[] arr1={1,2,3,4,5};
