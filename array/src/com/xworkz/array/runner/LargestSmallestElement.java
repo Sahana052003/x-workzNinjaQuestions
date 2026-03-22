@@ -4,7 +4,7 @@ package com.xworkz.array.runner;
 import java.util.Arrays;
 
 //Find the largest and smallest element in an array
-public class MinMax {
+public class LargestSmallestElement {
     public static void main(String[] args) {
         int[] arr = {5,2,9,1,6,3};
 
